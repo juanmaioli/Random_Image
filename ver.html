@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Girls</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body {
+        background-image: url("http://localhost/Random Image");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #a31b0f;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <article class="row">
+        <section class="col">
+          <img id="imagen1" src="" class="img-fluid" />
+        </section>
+
+        <section class="col">
+          <img id="imagen2" src="" class="img-fluid" />
+        </section>
+
+        <section class="col">
+          <img id="imagen3" src="" class="img-fluid" />
+        </section>
+
+        <section class="col">
+          <img id="imagen4" src="" class="img-fluid" />
+        </section>
+
+        <section class="col">
+          <img id="imagen5" src="" class="img-fluid" />
+        </section>
+      </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(function() {
+      console.log("Cambiando Imagen");
+      // Obtener la imagen por su ID
+      const imagen1 = document.getElementById('imagen1');
+      const imagen2 = document.getElementById('imagen2');
+      const imagen3 = document.getElementById('imagen3');
+      const imagen4 = document.getElementById('imagen4');
+      const imagen5 = document.getElementById('imagen5');
+      // Cambiar el atributo src de la imagen
+      imagen1.src = 'http://localhost/Random Image/abstracts';
+      imagen2.src = 'http://localhost/Random Image/weapons';
+      imagen3.src = 'http://localhost/Random Image/pets';
+      imagen4.src = 'http://localhost/Random Image';
+      imagen5.src = 'http://localhost/Random Image/series';
+  }, 500); // 3000 milisegundos = 3 segundos
+});
+</script>
