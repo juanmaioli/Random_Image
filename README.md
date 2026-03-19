@@ -36,7 +36,7 @@
 - Librería PHP `gd` para detección de dimensiones (opcional pero recomendada).
 
 ### 2. 🗄️ Base de Datos
-Importa el esquema inicial en tu servidor:
+Importa el esquema inicial completo (incluyendo tablas de imágenes y sesiones) en tu servidor:
 ```bash
 mysql -u tu_usuario -p admin_img < admin_img.sql
 ```
